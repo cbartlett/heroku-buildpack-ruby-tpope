@@ -65,12 +65,3 @@ theory, but it in practice, boy does this make things a whole lot simpler.
 [no downtime]: http://pedro.herokuapp.com/past/2011/7/13/rails_migrations_with_no_downtime/
 [Twelve-factor]: http://www.12factor.net/
 [Admin processes]: http://www.12factor.net/admin-processes
-
-## Commit recording
-
-This takes the upcoming and previously deployed commit SHAs and makes them
-available as `$REVISION` and `$ORIGINAL_REVISION` for the duration of the
-compile.  They are also written to `HEAD` and `ORIG_HEAD` in the root of the
-application for easy access after the deploy is complete.
-
-These can be used from `COMPILE_TASKS` to make a poor man's post-deploy hook.
